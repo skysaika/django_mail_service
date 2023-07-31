@@ -11,8 +11,9 @@ class CustomerAdmin(admin.ModelAdmin):
     list_display_links = ('first_name', 'surname', 'patronymic',)
     search_fields = ('email',)
 
+
 @admin.register(MailingSettings)
-class MailingSettingsAdmin(admin.ModelAdmin)
+class MailingSettingsAdmin(admin.ModelAdmin):
     """Mailing settings admin"""
     list_display = ('pk', 'send_time', 'frequency', 'sending_status',)
     list_display_links = ('pk',)
